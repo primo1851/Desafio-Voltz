@@ -11,18 +11,19 @@ export class Item {
         this.quality = quality!;
     }
 
-     execute(item: Item): void {
+    execute(item: Item): void {
         if (VerifyItem.verifyQuality(item.quality)) {
             if (VerifyItem.verifySellIn(item.sellIn)) {
                 item.sellIn--;
                 item.quality--;
-            }
-            item.sellIn--;
-            item.quality -= 2;
+            } 
 
+            item.quality = 0;
         }
     }
 
 }
+
+
 
 
