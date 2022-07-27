@@ -18,6 +18,10 @@ export class Item {
                 item.quality--;
             }             
         }
+        else{
+            item.quality = 0;
+            
+        }
         
         return item;
     }
