@@ -11,15 +11,15 @@ export class Item {
         this.quality = quality!;
     }
 
-    execute(item: Item): void {
-        if (VerifyItem.verifyQuality(item.quality)) {
-            if (VerifyItem.verifySellIn(item.sellIn)) {
+    execute(item: Item): Item {
+        if (VerifyItem.verifySellIn(item.sellIn)) {
+            if (VerifyItem.verifyQuality(item.quality)) {
                 item.sellIn--;
                 item.quality--;
-            } else {
-                item.quality = 0;
-            }
+            }             
         }
+        
+        return item;
     }
 
 }
