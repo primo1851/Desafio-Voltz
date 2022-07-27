@@ -5,6 +5,7 @@ describe(('Conjured Items test '), () => {
     const conjured = new ConjuredItem();
 
 
+
     it('should return quality minus 2', () => {
         const item: ConjuredItem = new ConjuredItem(10, 3);
         const result: ConjuredItem = new ConjuredItem(9, 1);
@@ -22,7 +23,7 @@ describe(('Conjured Items test '), () => {
 
     })
 
-    
+
 
     
 })
