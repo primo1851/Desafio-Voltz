@@ -11,10 +11,12 @@ export class SulfurasItem extends Item {
         super(name, sellIn, quality)
     }
 
-    execute(item: Item) {
-        if (VerifyItem.verifySellIn(item.sellIn)) {
-            item.sellIn = item.sellIn;
-            item.quality = 80;
-        }
+    execute(item: Item): Item {
+
+        item.sellIn = item.sellIn;
+        item.quality = 80;
+
+
+        return item;
     }
 }
