@@ -23,7 +23,7 @@ const sulfuras = new SulfurasItem();
 const conjured = new ConjuredItem();
 const foo = new Item();
 
-const gildedRose = new GildedRose(agedBrie, backstage, sulfuras, conjured, foo);
+const gildedRose = new GildedRose();
 
 let days: number = 2;
 if (process.argv.length > 2) {
