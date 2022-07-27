@@ -10,8 +10,8 @@ const sulfuras = new SulfurasItem();
 
 
 it('should return sell in and quality unchanged', () => {
-    const item: SulfurasItem = new SulfurasItem("Sulfuras, Hand of Ragnaros",2, 80);
-    const result: SulfurasItem = new SulfurasItem("Sulfuras, Hand of Ragnaros",2, 80);
+    const item: SulfurasItem = new SulfurasItem(2);
+    const result: SulfurasItem = new SulfurasItem(2);
 
     const response = sulfuras.execute(item);
     expect(response).toStrictEqual(result);
