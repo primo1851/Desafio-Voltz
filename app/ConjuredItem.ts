@@ -6,7 +6,6 @@ import { VerifyItem } from "./VerifyItem";
 export class ConjuredItem extends Item {
 
   constructor(
-    
     sellIn?: number,
     quality?: number
   ) {
@@ -14,6 +13,7 @@ export class ConjuredItem extends Item {
   }
 
   execute(item: Item): Item {
+    
     if (VerifyItem.verifySellIn(item.sellIn)) {
       item.sellIn--;
       item.quality -=2;
