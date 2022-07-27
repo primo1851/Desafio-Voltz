@@ -6,17 +6,17 @@ import { VerifyItem } from "./VerifyItem";
 export class ConjuredItem extends Item {
 
   constructor(
-    name?: string,
+    
     sellIn?: number,
     quality?: number
   ) {
-    super(name, sellIn, quality)
+    super("Conjured Mana Cake", sellIn, quality)
   }
 
-  execute(item: Item) {
-    if (VerifyItem.verifyQuality(item.quality)) {
+  execute(item: Item): Item {
+    if (VerifyItem.verifySellIn(item.sellIn)) {
       item.sellIn--;
-      item.quality -= 2;
+      item.quality -=2;
     }
     return item;
   }
