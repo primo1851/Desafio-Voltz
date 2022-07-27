@@ -18,6 +18,11 @@ export class ConjuredItem extends Item {
       item.sellIn--;
       item.quality -=2;
     }
+    else{
+     
+      item.quality =0;
+
+    }
     return item;
   }
   
