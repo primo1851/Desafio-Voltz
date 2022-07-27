@@ -14,13 +14,10 @@ npm install
 _You may need to install `ts-node`_
 
 ```sh
-npx ts-node test/golden-master-text-test.ts
+ yarn dev
 ```
 
-Or with number of days as args:
-```sh
-npx ts-node test/golden-master-text-test.ts 10
-```
+
 
 ## Running tests
 
