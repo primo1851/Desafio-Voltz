@@ -4,19 +4,17 @@ import { VerifyItem } from "./VerifyItem";
 export class SulfurasItem extends Item {
 
     constructor(
-        name?: string,
+        
         sellIn?: number,
-        quality?: number
+        
     ) {
-        super(name, sellIn, quality)
+        super("Sulfuras, Hand of Ragnaros", sellIn, 80)
     }
 
-    execute(item: Item): Item {
-
-        item.sellIn = item.sellIn;
-        item.quality = 80;
-
-
+    execute(item: Item): Item{
+        if (VerifyItem.verifySellIn(item.sellIn)) {
+            item.sellIn = item.sellIn;
+        }
         return item;
     }
 }
