@@ -16,9 +16,9 @@ export class Item {
             if (VerifyItem.verifySellIn(item.sellIn)) {
                 item.sellIn--;
                 item.quality--;
-            } 
-
-            item.quality = 0;
+            } else {
+                item.quality = 0;
+            }
         }
     }
 
