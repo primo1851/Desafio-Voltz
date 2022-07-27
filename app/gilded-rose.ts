@@ -1,8 +1,8 @@
 import {  AgedBrieItem } from "./AgedBrieItem";
 import { Item } from "./Item";
 import { BackstageItem } from "./BackstageItem";
-import { ConjuredItem } from "./ConjuredItem";
 import { SulfurasItem } from "./SulfurasItem";
+import { ConjuredItem } from "./ConjuredItem";
 
 
 export class GildedRose {
