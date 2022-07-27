@@ -18,5 +18,7 @@ export class ConjuredItem extends Item {
       item.sellIn--;
       item.quality -= 2;
     }
+    return item;
   }
+  
 }
