@@ -3,7 +3,7 @@ import { BackstageItem } from "@/BackstageItem";
 
 
 
-describe(('Backsatge teste '), () => {
+describe(('Backsatge test'), () => {
     const backsatge = new BackstageItem();
 
 
