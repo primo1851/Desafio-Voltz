@@ -1,7 +1,7 @@
 
 export class VerifyItem{
     static verifySellIn(sellIn: number): boolean {
-        if (sellIn > 0) {
+        if (sellIn => 0) {
             return true;
         }
         return false;
